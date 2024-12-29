@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nacionalidade</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    nacionalidade<input type="text" name="brtxt" id="brtxt">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="res">
+
+    </div>
+    <script>
+        function calcular() {
+            var brs = document.getElementById('brtxt')
+            var res = window.document.querySelector('div#res')
+            var brr = Text(brs.value)
+            res.innerHTML = `Você é ${brr}`
+            if (brr == Brasileiro) {
+                res.innerHTML += `Você é `
+            }
+        }
+    </script>
+</body>
+</html>
